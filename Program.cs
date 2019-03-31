@@ -15,8 +15,8 @@ namespace Arrays
             foreach (Calculation f in A) Console.WriteLine(f);
             Console.ReadKey();
 
-            Console.WriteLine("Two-dimensional array:");
-            int[,] unit = { { 0, 1, 2 }, { 3, 4, 5 } };
+            Console.WriteLine("Two-dimensional array:"); 
+            int[,] unit = { { 0, 1, 2 }, { 3, 4, 5 } };//створенння двохвимірного масиву
             for (int i = 0; i < unit.GetLength(0); ++i)
             {
                 for (int j = 0; j < unit.GetLength(1); ++j)
@@ -25,8 +25,8 @@ namespace Arrays
                 Console.ReadKey();
             }
 
-            Console.WriteLine("Three-dimensional array:");
-            int[,,] A3 = {
+            Console.WriteLine("Three-dimensional array:"); 
+            int[,,] A3 = {     //створенння тривимірного масиву
                     {{12, 2, 8}},
                     {{14, 5, 2}},
                     {{3, 26, 9}},
@@ -48,8 +48,8 @@ namespace Arrays
             }
 
             Console.WriteLine("\n");
-            Console.WriteLine("Jagged array:");
-            int[][] value = new int[5][];
+            Console.WriteLine("Jagged array:"); 
+            int[][] value = new int[5][];  //створенння зубчастого масиву
             value[0] = new int[] { 1, 2 };
             value[1] = new int[] { 1, 2, 3 };
             value[2] = new int[] { 1, 2, 3, 4, 5 };
